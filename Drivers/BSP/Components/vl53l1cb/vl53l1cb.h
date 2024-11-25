@@ -76,11 +76,11 @@ extern "C" {
 /** @defgroup VL53L1CB_Exported_Types Exported Types
   * @{
   */
-typedef int32_t (*VL53L1CB_Init_Func)(void);
-typedef int32_t (*VL53L1CB_DeInit_Func)(void);
-typedef int32_t (*VL53L1CB_GetTick_Func)(void);
-typedef int32_t (*VL53L1CB_WriteReg_Func)(uint16_t, uint8_t *, uint16_t);
-typedef int32_t (*VL53L1CB_ReadReg_Func)(uint16_t, uint8_t *, uint16_t);
+typedef int32_t  (*VL53L1CB_Init_Func)(void);
+typedef int32_t  (*VL53L1CB_DeInit_Func)(void);
+typedef uint32_t (*VL53L1CB_GetTick_Func)(void);
+typedef int32_t  (*VL53L1CB_WriteReg_Func)(uint16_t, uint8_t *, uint16_t);
+typedef int32_t  (*VL53L1CB_ReadReg_Func)(uint16_t, uint8_t *, uint16_t);
 
 typedef struct
 {
